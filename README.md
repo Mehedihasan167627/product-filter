@@ -18,6 +18,11 @@
 <span style="font-size:13px">
 (this link taking 49s to generate best route)
 </span>
+3. admin panel 
+  <b>username</b> : `admin`,
+  <b>password</b>: `123`
+
+
 
 ### Live links
 1. <a href="https://mehedihasan.pythonanywhere.com/" target="_blank" style="text-decoration:underline">All products</a> 
@@ -26,8 +31,8 @@
 (Free tier: This link can't generate best route, Please  try on localhost to generate best route)
 </span>
 3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/admin/ " target="_blank" style="text-decoration:underline">admin</a><span style="font-size:13px">
-  username: admin
-  password:123
+  <b>username</b> : `admin`,
+  <b>password</b>:`123`
 </span>
 
 ### 
