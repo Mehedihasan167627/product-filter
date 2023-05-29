@@ -17,9 +17,9 @@
 `{domain}/salesman/best-route-generate/`
 
 ### Live links
-1. <a href="https://mehedihasan.pythonanywhere.com/" style="text-decoration:underline">All products</a> 
-2. <a href="https://mehedihasan.pythonanywhere.com/salesman/best-route/" style="text-decoration:underline">Already generated best route</a>
-2. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " style="text-decoration:underline">Generate new Best Route</a>
+1. <a href="https://mehedihasan.pythonanywhere.com/" target="_blank" style="text-decoration:underline">All products</a> 
+2. <a href="https://mehedihasan.pythonanywhere.com/salesman/best-route/" target="_blank" style="text-decoration:underline">Already generated best route</a>
+3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " target="_blank" style="text-decoration:underline">Generate new Best Route</a>
 
 ### Demo 
 1. All products
