@@ -44,7 +44,7 @@
           <a
             href="{% url 'salesman_traveling:show_route' %}"
             class="btn btn-dark"
-            >Previous</a
+            >Previous Route</a
           >
           <button class="btn btn-primary generateBtn">Generate New</button>
         </div>
@@ -83,7 +83,7 @@
         let csrf = $("input[name='csrfmiddlewaretoken']").val();
         $(this).removeClass("btn-primary");
         $(this).addClass("btn-success");
-        $(this).html("Generate New...")
+        $(this).html("Generating...")
         let count = 1;
         setInterval(() => {
           count = count + 1;
