@@ -16,7 +16,12 @@
 2. Generate new best route 
 `{domain}/salesman/best-route-generate/`
 
-###Demo 
+### Live links
+1. <a href="https://mehedihasan.pythonanywhere.com/" style="text-decoration:underline">All products</a> 
+2. <a href="https://mehedihasan.pythonanywhere.com/salesman/best-route/" style="text-decoration:underline">Already generated best route</a>
+2. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " style="text-decoration:underline">Generate new Best Route</a>
+
+### Demo 
 1. All products
 <img src="demo/all_product.png" >
 2.Filterd products
