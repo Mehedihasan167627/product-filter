@@ -22,10 +22,10 @@
 ### Live links
 1. <a href="https://mehedihasan.pythonanywhere.com/" target="_blank" style="text-decoration:underline">All products</a> 
 2. <a href="https://mehedihasan.pythonanywhere.com/salesman/best-route/" target="_blank" style="text-decoration:underline">Already generated best route</a>
-3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " target="_blank" style="text-decoration:underline">Generate new Best Route</a>
-<span style="font-size:13px">
+3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " target="_blank" style="text-decoration:underline">Generate new Best Route</a><span style="font-size:13px">
 (free tier: this link can't generate best route try locally)
 </span>
+
 
 
 ### Demo 
