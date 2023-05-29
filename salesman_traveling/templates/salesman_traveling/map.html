@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bf74d734ac7a2c6cdd69cbfc634f60f0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bf74d734ac7a2c6cdd69cbfc634f60f0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bf74d734ac7a2c6cdd69cbfc634f60f0 = L.map(
+                "map_bf74d734ac7a2c6cdd69cbfc634f60f0",
+                {
+                    center: [23.8728568, 90.3984184],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ba030b8efafdb5e08823948bbe5bf106 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var marker_a27678d02f6a3d4b59afea447a30c9c1 = L.marker(
+                [23.8728568, 90.3984184],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_52595acfb25ae2efb99edea5a81392b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a27678d02f6a3d4b59afea447a30c9c1.setIcon(icon_52595acfb25ae2efb99edea5a81392b7);
+        
+    
+        var popup_de87f6185ef75122e1d07fb364379716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b75c95933f92e83efcb0f5fda70ebad3 = $(`<div id="html_b75c95933f92e83efcb0f5fda70ebad3" style="width: 100.0%; height: 100.0%;">Uttara Branch</div>`)[0];
+                popup_de87f6185ef75122e1d07fb364379716.setContent(html_b75c95933f92e83efcb0f5fda70ebad3);
+            
+        
+
+        marker_a27678d02f6a3d4b59afea447a30c9c1.bindPopup(popup_de87f6185ef75122e1d07fb364379716)
+        ;
+
+        
+    
+    
+            marker_a27678d02f6a3d4b59afea447a30c9c1.bindTooltip(
+                `<div>
+                     Uttara Branch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58dd91901d09df1ba1af269d7d0db37d = L.marker(
+                [23.8728568, 90.3984184],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_c25822b3202a8b071a078ffebe07ad5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58dd91901d09df1ba1af269d7d0db37d.setIcon(icon_c25822b3202a8b071a078ffebe07ad5f);
+        
+    
+        var popup_9371b9dddaeca934c7421c98335e09d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5980b867fe92fce064f9b9384478718 = $(`<div id="html_a5980b867fe92fce064f9b9384478718" style="width: 100.0%; height: 100.0%;">Uttara Branch</div>`)[0];
+                popup_9371b9dddaeca934c7421c98335e09d2.setContent(html_a5980b867fe92fce064f9b9384478718);
+            
+        
+
+        marker_58dd91901d09df1ba1af269d7d0db37d.bindPopup(popup_9371b9dddaeca934c7421c98335e09d2)
+        ;
+
+        
+    
+    
+            marker_58dd91901d09df1ba1af269d7d0db37d.bindTooltip(
+                `<div>
+                     Uttara Branch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fd626963f4b940c09ed4c921217d96f = L.marker(
+                [23.8679743, 90.3840879],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_5dfe37470626c4f2f9564e4581851c12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4fd626963f4b940c09ed4c921217d96f.setIcon(icon_5dfe37470626c4f2f9564e4581851c12);
+        
+    
+        var popup_d40997399800491d418d8b94d1575386 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_537c22f318bd09c2f540c95690b3aa61 = $(`<div id="html_537c22f318bd09c2f540c95690b3aa61" style="width: 100.0%; height: 100.0%;">City Bank Beside Uttara Diagnostic</div>`)[0];
+                popup_d40997399800491d418d8b94d1575386.setContent(html_537c22f318bd09c2f540c95690b3aa61);
+            
+        
+
+        marker_4fd626963f4b940c09ed4c921217d96f.bindPopup(popup_d40997399800491d418d8b94d1575386)
+        ;
+
+        
+    
+    
+            marker_4fd626963f4b940c09ed4c921217d96f.bindTooltip(
+                `<div>
+                     City Bank Beside Uttara Diagnostic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5796a16fa509813b05b5bbfacaf7737 = L.marker(
+                [23.8629078, 90.3816318],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_c1c02b30c2c435309933363ca78c22ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5796a16fa509813b05b5bbfacaf7737.setIcon(icon_c1c02b30c2c435309933363ca78c22ee);
+        
+    
+        var popup_fdf03a7407a17111d72f1bdd21a7c2ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e593fbdb0180f0314ebfe12af1a1bb67 = $(`<div id="html_e593fbdb0180f0314ebfe12af1a1bb67" style="width: 100.0%; height: 100.0%;">City Bank Shaheed Sarani</div>`)[0];
+                popup_fdf03a7407a17111d72f1bdd21a7c2ac.setContent(html_e593fbdb0180f0314ebfe12af1a1bb67);
+            
+        
+
+        marker_b5796a16fa509813b05b5bbfacaf7737.bindPopup(popup_fdf03a7407a17111d72f1bdd21a7c2ac)
+        ;
+
+        
+    
+    
+            marker_b5796a16fa509813b05b5bbfacaf7737.bindTooltip(
+                `<div>
+                     City Bank Shaheed Sarani
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0ef1c43bad6be3e922a576a9f575b93 = L.marker(
+                [23.8513998, 90.3944536],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_696ac84c92b30b5ee721ccc987eaea9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0ef1c43bad6be3e922a576a9f575b93.setIcon(icon_696ac84c92b30b5ee721ccc987eaea9d);
+        
+    
+        var popup_be9055736edb73e9c496397fd86ecc2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8ae5d5626b43246c316780c52ce2da5 = $(`<div id="html_d8ae5d5626b43246c316780c52ce2da5" style="width: 100.0%; height: 100.0%;">City Bank Airport</div>`)[0];
+                popup_be9055736edb73e9c496397fd86ecc2a.setContent(html_d8ae5d5626b43246c316780c52ce2da5);
+            
+        
+
+        marker_b0ef1c43bad6be3e922a576a9f575b93.bindPopup(popup_be9055736edb73e9c496397fd86ecc2a)
+        ;
+
+        
+    
+    
+            marker_b0ef1c43bad6be3e922a576a9f575b93.bindTooltip(
+                `<div>
+                     City Bank Airport
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93d33581b2a318b3f5f44ecb3b360c75 = L.marker(
+                [23.8248938, 90.3549467],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_7608606675e9691a48570fdfa7b301e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_93d33581b2a318b3f5f44ecb3b360c75.setIcon(icon_7608606675e9691a48570fdfa7b301e4);
+        
+    
+        var popup_4845168bb12ce5d5c6d59322f40a6ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c75cd3d8cf4b61db193ec5812a2f7ae = $(`<div id="html_6c75cd3d8cf4b61db193ec5812a2f7ae" style="width: 100.0%; height: 100.0%;">City Bank Pallabi</div>`)[0];
+                popup_4845168bb12ce5d5c6d59322f40a6ea0.setContent(html_6c75cd3d8cf4b61db193ec5812a2f7ae);
+            
+        
+
+        marker_93d33581b2a318b3f5f44ecb3b360c75.bindPopup(popup_4845168bb12ce5d5c6d59322f40a6ea0)
+        ;
+
+        
+    
+    
+            marker_93d33581b2a318b3f5f44ecb3b360c75.bindTooltip(
+                `<div>
+                     City Bank Pallabi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a7b5fe20de2bdb1f64a0cf3c4e04ed = L.marker(
+                [23.8248293, 90.3551134],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_520284c48777ef39ed821988f768cefb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1a7b5fe20de2bdb1f64a0cf3c4e04ed.setIcon(icon_520284c48777ef39ed821988f768cefb);
+        
+    
+        var popup_c18f06af8f9142d26337593f959d558e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401fabdde85163415c75f0e75258d696 = $(`<div id="html_401fabdde85163415c75f0e75258d696" style="width: 100.0%; height: 100.0%;">City Bank Mirpur 12</div>`)[0];
+                popup_c18f06af8f9142d26337593f959d558e.setContent(html_401fabdde85163415c75f0e75258d696);
+            
+        
+
+        marker_a1a7b5fe20de2bdb1f64a0cf3c4e04ed.bindPopup(popup_c18f06af8f9142d26337593f959d558e)
+        ;
+
+        
+    
+    
+            marker_a1a7b5fe20de2bdb1f64a0cf3c4e04ed.bindTooltip(
+                `<div>
+                     City Bank Mirpur 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_517c20ee8d219923a3dc01ce3098800f = L.marker(
+                [23.813316, 90.4147498],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_53ced13e77bbd2840121182815f26179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_517c20ee8d219923a3dc01ce3098800f.setIcon(icon_53ced13e77bbd2840121182815f26179);
+        
+    
+        var popup_6afbfe1f4a4b7237317f30f732f059a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc1eff17f07c15f5336f3b78f04be88 = $(`<div id="html_0fc1eff17f07c15f5336f3b78f04be88" style="width: 100.0%; height: 100.0%;">City Bank JFP</div>`)[0];
+                popup_6afbfe1f4a4b7237317f30f732f059a2.setContent(html_0fc1eff17f07c15f5336f3b78f04be88);
+            
+        
+
+        marker_517c20ee8d219923a3dc01ce3098800f.bindPopup(popup_6afbfe1f4a4b7237317f30f732f059a2)
+        ;
+
+        
+    
+    
+            marker_517c20ee8d219923a3dc01ce3098800f.bindTooltip(
+                `<div>
+                     City Bank JFP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56caca72ddabde92144f30a563939f96 = L.marker(
+                [23.827149, 90.4106238],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_5560d630e36fa0973c8ac81e2020b9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_56caca72ddabde92144f30a563939f96.setIcon(icon_5560d630e36fa0973c8ac81e2020b9e1);
+        
+    
+        var popup_bf39e96c2b913cd1989bf95378256657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac7e02cf18a0ab0ffae2fcd8db862f39 = $(`<div id="html_ac7e02cf18a0ab0ffae2fcd8db862f39" style="width: 100.0%; height: 100.0%;">City Bank Le Meridien</div>`)[0];
+                popup_bf39e96c2b913cd1989bf95378256657.setContent(html_ac7e02cf18a0ab0ffae2fcd8db862f39);
+            
+        
+
+        marker_56caca72ddabde92144f30a563939f96.bindPopup(popup_bf39e96c2b913cd1989bf95378256657)
+        ;
+
+        
+    
+    
+            marker_56caca72ddabde92144f30a563939f96.bindTooltip(
+                `<div>
+                     City Bank Le Meridien
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cd8cd14c083ee96960ef5449e8c53bd9 = L.marker(
+                [23.8330429, 90.4092871],
+                {}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+    
+            var icon_4848074a6efc7f60592d5786a6d70375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gift", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd8cd14c083ee96960ef5449e8c53bd9.setIcon(icon_4848074a6efc7f60592d5786a6d70375);
+        
+    
+        var popup_4b91d5bfd42f486d984304b4f4dc4d7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d848f8ce534bdfa4aa45d551ee0f9006 = $(`<div id="html_d848f8ce534bdfa4aa45d551ee0f9006" style="width: 100.0%; height: 100.0%;">City Bank Nikunja</div>`)[0];
+                popup_4b91d5bfd42f486d984304b4f4dc4d7e.setContent(html_d848f8ce534bdfa4aa45d551ee0f9006);
+            
+        
+
+        marker_cd8cd14c083ee96960ef5449e8c53bd9.bindPopup(popup_4b91d5bfd42f486d984304b4f4dc4d7e)
+        ;
+
+        
+    
+    
+            marker_cd8cd14c083ee96960ef5449e8c53bd9.bindTooltip(
+                `<div>
+                     City Bank Nikunja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ea75ceab5391508934bcbfaa30c25a9a = L.polyline(
+                [[23.8728568, 90.3984184], [23.8728568, 90.3984184], [23.8679743, 90.3840879], [23.8629078, 90.3816318], [23.8513998, 90.3944536], [23.8248938, 90.3549467], [23.8248293, 90.3551134], [23.813316, 90.4147498], [23.827149, 90.4106238], [23.8330429, 90.4092871]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": "5", "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_bf74d734ac7a2c6cdd69cbfc634f60f0);
+        
+</script>
+</html>

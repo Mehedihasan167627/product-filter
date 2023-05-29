@@ -1,0 +1,9 @@
+venv
+core/__pycache__
+
+products/__pycache__
+products/migrations/__pycache__
+
+salesman_traveling/__pycache__
+salesman_traveling/migrations/__pycache__
+

@@ -1,0 +1,181 @@
+<div class="col-md-3 card cardOverride p-1 px-3">
+  <div class="priceRanger mb-2">
+    <input type="hidden" name="" id="minHiddenPrice" value="{{range.min}}">
+    <input type="hidden" name="" id="maxHiddenPrice" value="{{range.max}}">
+    <p class="text-uppercase mb-2">Price</p>
+    <form action="" method="get" id="rangeForm">
+      <div
+        class="d-flex"
+        style="align-items: center; justify-content: space-between"
+      >
+        <input
+          type="number"
+          name=""
+          id="minPrice"
+          value="{{range.min}}"
+          class="form-control mr-1"
+          style="width: 80px"
+          min="{{range.min}}"
+          placeholder="Min "
+          required
+        />
+        <span>TO</span>
+        <input
+          type="text"
+          name=""
+          id="maxPrice"
+          class="form-control"
+          style="width: 80px"
+          placeholder="Max "
+          min="{{range.min}}"
+          required
+        />
+        <button
+          type="submit"
+          id="goBtn"
+          class="btn ml-2"
+          style="background: orangered; color: white"
+        >
+          GO
+        </button>
+      </div>
+    </form>
+
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+
+  <div class="brand mb-2">
+    <p class="text-uppercase mb-3">Brand</p>
+    <div class="brandGroup">
+      {% for brand in brands %}
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="brandInputBox filterItem"
+          value="{{brand.id}}"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >{{brand.name}}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+    <button class="btn" style="color: orangered">view all</button>
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+  <div class="earphone mb-2">
+    <p class="text-uppercase mb-3">earphone</p>
+    <div class="brandGroup">
+      {% for category in categories %}
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="categoryInputBox filterItem"
+          value="{{category.id}}"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >{{category.name}}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+  <div class="productType mb-2">
+    <p class="text-uppercase mb-3">product type</p>
+    <div class="brandGroup">
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="productTypeInputBox filterItem"
+          value="life style"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px">life style </span>
+      </div>
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="productTypeInputBox filterItem"
+          value="mobile phone accesories"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >mobile phone accesories
+        </span>
+      </div>
+    </div>
+
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+  <div class="seller mb-2">
+    <p class="text-uppercase mb-3">seller</p>
+    <div class="brandGroup">
+      {% for seller in sellers %}
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="sellerInputBox filterItem"
+          value="{{seller.id}}"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >{{seller.name}}
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+
+  <div class="warrantyPeriod mb-2">
+    <p class="text-uppercase mb-3">warranty period</p>
+    <div class="brandGroup">
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="warrantyInputBox filterItem"
+          value="3days warranty"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >3days warranty
+        </span>
+      </div>
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="warrantyInputBox filterItem"
+          value="3months warranty"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px"
+          >3months warranty
+        </span>
+      </div>
+      <div class="d-flex mb-2" style="align-items: center">
+        <input
+          type="checkbox"
+          name=""
+          class="warrantyInputBox filterItem"
+          value="no warranty"
+          style="height: 15px; width: 15px; margin-right: 5px"
+        />
+        <span class="text-uppercase" style="font-size: 13px">no warranty </span>
+      </div>
+    </div>
+
+    <hr style="color: rgb(86, 77, 77)" />
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Locations | Find best route</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    {% csrf_token %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+           <a href="{% url 'products:products' %}">products</a>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-8 mx-auto TableData">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col" class="text-uppercase">latitude</th>
+                <th scope="col" class="text-uppercase">longitude</th>
+                <th scope="col" class="text-uppercase">Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for b in branches %}
+              <tr>
+                <td>{{b.latitude}}</td>
+                <td>{{b.longitude}}</td>
+                <td>{{b.place}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <a
+            href="{% url 'salesman_traveling:show_route' %}"
+            class="btn btn-dark"
+            >Previous</a
+          >
+          <button class="btn btn-primary generateBtn">Generate New</button>
+        </div>
+        <div class="col-md-8 mx-auto">
+          <div class="show_time"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let spinner = `
+  <div style="margin-top:50px; margin-bottom:100px">
+    <div class="spinner-grow text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-secondary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  <div class="spinner-grow text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>   
+    </div>
+`;
+      $(".generateBtn").on("click", function () {
+        let TableData = $(".TableData").html(spinner);
+        let csrf = $("input[name='csrfmiddlewaretoken']").val();
+        $(this).removeClass("btn-primary");
+        $(this).addClass("btn-success");
+        $(this).html("Generate New...")
+        let count = 1;
+        setInterval(() => {
+          count = count + 1;
+          $(".show_time").html(count + "s");
+        }, 1000);
+    
+        $.ajax({
+          url: "",
+          method: "POST",
+          data: { csrfmiddlewaretoken: csrf },
+          success: function (res) {
+            if (res.data == "success") {
+              window.location.href =
+                "{% url 'salesman_traveling:show_route' %}";
+            }
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
