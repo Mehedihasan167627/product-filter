@@ -25,8 +25,13 @@
 3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/ " target="_blank" style="text-decoration:underline">Generate new Best Route</a><span style="font-size:13px">
 (Free tier: This link can't generate best route, Please  try on localhost to generate best route)
 </span>
+3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/admin/ " target="_blank" style="text-decoration:underline">admin</a><span style="font-size:13px">
+  username: admin
+  password:123
+</span>
 
-
+### 
+1.
 
 ### Demo 
 1. All products
