@@ -18,7 +18,9 @@
 <span style="font-size:13px">
 (this link taking 49s to generate best route)
 </span>
+<br>
 3. admin panel 
+`{domain}/admin/` 
   <b>username</b> : `admin`,
   <b>password</b>: `123`
 
@@ -31,7 +33,7 @@
 (Free tier: This link can't generate best route, Please  try on localhost to generate best route)
 </span>
 <br>
-3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/admin/ " target="_blank" style="text-decoration:underline">admin</a><span style="font-size:13px">
+3. <a href="http://mehedihasan.pythonanywhere.com/salesman/best-route-generate/admin/ " target="_blank" style="text-decoration:underline">admin panel</a><span style="font-size:13px">
   <b>username</b> : `admin`,
   <b>password</b>:`123`
 </span>
